@@ -1,0 +1,80 @@
+{
+  "name": "Outreach",
+  "description": "Outreach CRM",
+  "type": "executer",
+  "main": "app.js",
+  "execProgram": "node",
+  "exposeRoute": false,
+  "imgUrl": "logo.png",
+  "version": "1.0.0",
+  "settings" : [
+    {
+      "name": "email",
+      "viewName": "Email",
+      "type": "string"
+    },
+    {
+      "name": "password",
+      "viewName": "Password",
+      "type": "vault"
+    },
+    {
+      "name": "clientId",
+      "viewName": "Client Id",
+      "type": "string"
+    },
+    {
+      "name": "clientSecret",
+      "viewName": "Client Secret",
+      "type": "vault"
+    },
+    {
+      "name": "redirectUri",
+      "viewName": "Redirect URI",
+      "type": "string"
+    }
+  ],
+  "methods": [
+    {
+      "name": "addProspect",
+      "viewName": "Add Prospect",
+      "params": [
+        {
+          "name": "email",
+          "viewName": "Email",
+          "type": "string"
+        },
+        {
+          "name": "company",
+          "viewName": "Company",
+          "type": "string"
+        },
+        {
+          "name": "firstName",
+          "viewName": "First Name",
+          "type": "string"
+        },
+        {
+          "name": "lastName",
+          "viewName": "Last Name",
+          "type": "string"
+        },
+        {
+          "name": "workPhone",
+          "viewName": "Work Phone",
+          "type": "string"
+        },
+        {
+          "name": "custom1",
+          "viewName": "Custom Field 1",
+          "type": "string"
+        },
+        {
+          "name": "owner",
+          "viewName": "Owner",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
