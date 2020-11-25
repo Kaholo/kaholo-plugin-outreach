@@ -174,7 +174,7 @@ class Auth {
     redirectUri,
     scope,
   }) {
-    console.log(`email: ${email}, pass: ${password}, secret: ${clientSecret}`);
+    
     const { cookies } = await this.login(email, password);
     const code = await this.getCode(clientId, redirectUri, scope, cookies);
 
