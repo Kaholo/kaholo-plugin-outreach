@@ -6,8 +6,8 @@
   "execProgram": "node",
   "exposeRoute": false,
   "imgUrl": "logo.png",
-  "version": "1.0.0",
-  "settings" : [
+  "version": "1.0.2",
+  "settings": [
     {
       "name": "email",
       "viewName": "Email",
@@ -76,5 +76,6 @@
         }
       ]
     }
-  ]
+  ],
+  "category": "CRM"
 }
